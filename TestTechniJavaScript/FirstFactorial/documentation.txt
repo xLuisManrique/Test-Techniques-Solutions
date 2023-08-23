@@ -1,0 +1,15 @@
+Documentacion FIRST FACTORIAL
+1-> Dentro del test nos entregan una funcion  definida como "First Factorial" y toma un parametro "num" que es el numero que vamos a calcular para el factorial.
+2-> Empezamos inicializando una variable llamada "resultado" con el valor en 1. Basicamente lo que hara es almacenar el resultado del calculo
+del factorial
+3-> Hacemos un buclo "for"  que va comenzar con la declaracion de "let i = 1 " hasta "num". Y lo que hara este bucle es ejecutarse una vez por cada numero de ese rango.
+	-> for ( let i = 1; i <= num; i++){} <-
+4-> Dentro del bucle, el valor actual del resultado se debe multiplicar x i. Esto quiere decir que en cada iteracion el valor del resultado se actualiza multiplicandose por el numero actual del bucle
+	for ( let i = 1; i <= num; i++){ 
+	-> resultado *= i; <- }
+5-> Despues que el bucle termine su ejecucion habra ocurrido "num" de multiplicaciones sucesivas.
+6-> Finalmente devolvemos el valor almacenado en la variable "resultado"
+	-> return resultado; <-
+7- Hacemos un console log con los ejemplos y verificamos que se ejecute correctamente
+	-> console.log(FirstFactorial(4)); <-
+8-> En resumen este pequeño codigo calcula el factorial del numero "num" utilizando un bucle "for".

@@ -1,0 +1,11 @@
+Documentacion InscriptionInterface PHP:
+1-> Ya el test nos entrega como debe llamarse la interfaz. Entonces, definimos la interface que se llama " InscriptionInterface " y abro corchetes. Como ya sabemos, o los que no saben, una interfaz define un conjunto de metodos que las clases aue se implementen deben proporcionar. En este caso, estamos definiendo la interfaz " InscriptionInterface "
+
+2-> Dentro de la interfaz, vamos a declarar los metodos que nos entrega el test, que estos son "getDateCreated y setDateCreated(DateTime $datetime)
+
+3-> Ahora bien, dentro del metodo "getDateCreated" vamos a declarar la funcion como publica y que nos devuelva u objeto de tipo "DateTime", asi que estos nos deberia quedar asi
+	-> public function getDateCreated(): DateTime;
+Este metodo va indicar que cualquier clase que implemente esta interfaz debe tener un metodo llamado "getdatecreated" que no reciba argumentos y que devuelva el objeto datetime. Y basicamente lo que hace este metodo es obtener la fecha de creacion de algo relacionado con la inscripcion.
+
+4-> Y vamos hacer lo mismo con el metodo "setDateCreated" con la diferencia es que este metodo, va recibir un argumento llamado $datetime de tipo "DateTime" que no va a devolver ningun valor.
+	-> public function setDateCreated(DateTIme $datetime): void; Y basicamente a diferencia del getDateCreated que nos establece la fecha de creacion este metodo setDateCreated establece la fecha de creacion de algo relacionado con la inscripcion. Y como el metodo no devuelve ningun valor, simplemente realiza la accion de establecer la fecha de creacion sin retornar algun resultado explicito.

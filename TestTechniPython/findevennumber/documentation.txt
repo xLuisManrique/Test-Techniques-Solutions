@@ -1,0 +1,19 @@
+Documentacion FIND EVEN NUMBERS - Python
+
+1-> Primero definimos la funcion find_even_numbers que toma un argumento llamado numbers_list
+	-> def find_even_numbers(numbers_list):
+2-> luego creamos una lista vacia que la llamaremos even_numbers donde almacenaremos los numeros pares
+	-> even_numbers = []
+3-> Luego vamos a recorrer cada numero en la lista de entrada usando un bucle for
+	-> for num in numbers_list:
+4-> dentro del bucle, verificamos si el numero es par usando el operador de modulo %. Si el residuo de dividir el numero entre 2 es igual a 0, sabemos que es par y lo agregamos a la lista even_numbers
+	-> if num % 2 == 0:
+		even_numbers.append(num)
+utilizamos el append para que agregue elementos al final de la lista
+
+5-> finalmente retornamos la lista even_numbers aue contiene los numeros pares
+	-> return even_numbers
+6-> ahora vamos a probar nuestra funcion con un ejemplo
+	-> input_list = [1,2,3,4,5,6,7,8,9,10]
+	result = find_even_numbers(input_list)
+	print(result)
