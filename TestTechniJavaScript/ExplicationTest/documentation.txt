@@ -1,0 +1,4 @@
+Documentacion Explicacion JavaScript:
+
+console.log(3 + 3);
+En esta línea, se están sumando dos números: 3 y 3. El operador + se usa aquí para realizar una suma aritmética.El resultado es 6.
